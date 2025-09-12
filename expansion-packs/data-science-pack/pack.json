@@ -1,0 +1,81 @@
+{
+  "name": "Data Science Pack",
+  "version": "1.0.0",
+  "description": "AI-powered data analysis team with specialized roles",
+  "agents": [
+    {
+      "role": "Data Scientist",
+      "id": "data_scientist",
+      "capabilities": [
+        "Statistical analysis",
+        "ML model selection",
+        "Hypothesis testing",
+        "Feature engineering",
+        "Model evaluation"
+      ],
+      "tools": ["python", "r", "jupyter", "sklearn", "pandas", "numpy"],
+      "specialization": "Advanced statistical modeling and machine learning"
+    },
+    {
+      "role": "Data Engineer",
+      "id": "data_engineer",
+      "capabilities": [
+        "Pipeline design",
+        "ETL processes",
+        "Data warehousing",
+        "Stream processing",
+        "Data quality validation"
+      ],
+      "tools": ["spark", "airflow", "kafka", "sql", "docker", "kubernetes"],
+      "specialization": "Scalable data infrastructure and processing"
+    },
+    {
+      "role": "ML Engineer",
+      "id": "ml_engineer",
+      "capabilities": [
+        "Model deployment",
+        "A/B testing",
+        "MLOps",
+        "Model monitoring",
+        "Production optimization"
+      ],
+      "tools": ["mlflow", "kubeflow", "tensorflow", "pytorch", "docker", "ci/cd"],
+      "specialization": "Production ML systems and experimentation"
+    },
+    {
+      "role": "Visualization Expert",
+      "id": "viz_expert",
+      "capabilities": [
+        "Dashboard design",
+        "Insight communication",
+        "Interactive visualizations",
+        "Storytelling with data",
+        "Business intelligence"
+      ],
+      "tools": ["tableau", "d3js", "plotly", "streamlit", "powerbi", "matplotlib"],
+      "specialization": "Data storytelling and visual communication"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "end_to_end_analysis",
+      "description": "Complete data science project workflow",
+      "steps": [
+        "data_engineer: Extract and prepare data",
+        "data_scientist: Exploratory analysis and modeling",
+        "ml_engineer: Deploy and test models",
+        "viz_expert: Create insights dashboard"
+      ]
+    },
+    {
+      "name": "model_improvement",
+      "description": "Iterative model enhancement workflow",
+      "steps": [
+        "ml_engineer: Monitor model performance",
+        "data_scientist: Analyze performance issues",
+        "data_engineer: Update data pipeline if needed",
+        "viz_expert: Update monitoring dashboards"
+      ]
+    }
+  ]
+}
