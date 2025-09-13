@@ -1,6 +1,6 @@
 # Solar Emergence Project Status
 
-![ci](https://github.com/joshuavaughan/solar-emergence/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/Bodhi1111/solar-emergence/actions/workflows/ci.yml/badge.svg)
 
 ## Current State (Last Updated: $(date))
 - **Project**: Solar Emergence with BMad framework
@@ -20,10 +20,23 @@
 - 🔄 Creating GitHub repository
 - 🔄 Pushing code to GitHub
 
-## Next Steps After Reconnecting
-1. Complete GitHub authentication: `gh auth login --web`
-2. Create repository: `gh repo create solar-emergence --public --source=. --remote=origin --push`
-3. Verify everything is pushed: `git remote -v`
+## Implementation Resources
+- 📋 **[LOCAL_IMPLEMENTATION_GUIDE.md](docs/LOCAL_IMPLEMENTATION_GUIDE.md)** - Complete $0 local deployment guide
+- 🏗️ **[PROJECT_CHARTER.md](docs/PROJECT_CHARTER.md)** - Vision and core principles  
+- 🔧 **[TECHNICAL_SPECIFICATION.md](docs/TECHNICAL_SPECIFICATION.md)** - Architecture details
+- 📅 **[PROJECT_PLAN.md](docs/PROJECT_PLAN.md)** - Implementation roadmap
+
+## Quick Start Commands
+```bash
+# Launch discovery system
+./scripts/launch_intelligence.sh
+
+# Monitor real-time discoveries  
+python3 scripts/monitor_emergence.py --realtime
+
+# Process single video test
+python3 extraction/unconstrained_capture.py --test
+```
 
 ## Key Files Structure
 ```
