@@ -2,44 +2,44 @@
 
 ## Knowledge Categories
 
-### Patterns (15 items)
+### Patterns (16 items)
 - - GNN/Pattern Discovery: GNN Survey, Self-supervised Learning, TDA, UMAP
 - - Core AI/ML: Transformer, AlphaGo Zero, Meta-learning, Emergent Tool Use
-- Plus, discoverability -- as it turns out -- is easier to address.
-- Go forth, brave module spelunker, and make your work discoverable and usable
-- it matches the developer's needs. This becomes essentially a series of pattern
+- Replanning: Agents can now dynamically edit their own task lists, adapting when a step fails or a be
+- **This is okay**. Truly. A low bar to entry and a discoverability problem is
 - The Node community has responded to the challenge of discoverability in
 - The pattern of README appearing in all-caps is a consistent facet throughout
-- **This is okay**. Truly. A low bar to entry and a discoverability problem is
+- Plus, discoverability -- as it turns out -- is easier to address.
+- it matches the developer's needs. This becomes essentially a series of pattern
 - benefits from predictable patterns.
-- This document catalogs key open-source repositories for layered fusion and meta-data modules in mult
-... and 5 more
+- Go forth, brave module spelunker, and make your work discoverable and usable
+... and 6 more
 
 ### Algorithms (19 items)
 - - Whisper.cpp (local speech processing)
-- > routines or methods, lengthy code examples, or other in-depth
 - No matter your approach, regardless whether a module spelunker enters the module
+- > routines or methods, lengthy code examples, or other in-depth
 - It uses local architecture for processing video data.
-- This system demonstrates emergent pattern discovery algorithms.
 - Unfortunately, it currently uses OpenAI API for processing.
+- This system demonstrates emergent pattern discovery algorithms.
 - - Orientation methods now return current orientation. [Issue #64]
 - * paid scientific consulting around speaker diarization and speech processing in general;
 - training process. Adding `--cfg job` option to the previous command will let
 - protocol = registry.get_protocol("AMI.SpeakerDiarization.only_words", preprocessors={"audio": FileFi
 ... and 9 more
 
-### Architectures (56 items)
-- module remains a valid and valuable model for the npm ecosystem, and your
-- The Node ecosystem is powered by its modules. [npm](https://npmjs.org) is the
-- Node has a "wide" ecosystem: it's largely made up of a very long list of
-- much of the internet, and both feature a wide module ecosystem.
-- However, most systems today will not sort capitals before all lowercase
+### Architectures (64 items)
+- The "swarm" is an architecture where a problem is decomposed and assigned to multiple specialized ag
+- Model Switching: Advanced systems route sub-tasks to the most capable model for each job.
+- Sophisticated Agentic Architectures:
+- Bercovici, a self-proclaimed former skeptic of AGI, said he's now a believer that AGI is coming, hav
+- This new generation of agentic systems has mastered several key structural capabilities:
+- Bercovici observes swarms now deliver "security audits, red teaming, compliance documentation, and e
+- By the time his flight crossed Iceland, he recounted in an interview with VentureBeat, his "Claude C
+- The convergence of several distinct technological advancements are driving this sudden leap: a new g
 - more structured, lintable take on a common README format.
-- important but not widely known abstractions or other ecosystems. The function
 - state of READMEs in the Node ecosystem. It spurred me to create
-- Like any ecosystem that is extremely accessible, the quality bar varies. npm
-- equally well to other programming ecosystems, as well.
-... and 46 more
+... and 54 more
 
 ### Techniques (8 items)
 - > implementation (guts). This is good because it means that you are free to
@@ -55,12 +55,12 @@
 - it is the single-purpose commoners who, given their larger numbers, truly rule the
 - guidelines and handy command-line generator. If you like what's written here,
 - that I think embody the principles of this article well:
-- ## Enforcement Guidelines
 - Community Impact Guidelines were inspired by [Mozilla's code of conduct
 - Community leaders will follow these Community Impact Guidelines in determining
+- ## Enforcement Guidelines
 - When reporting bugs, please follow the guidelines in this template. This helps identify the problem 
 - - The golden rule is to **always open *one* issue for *one* bug**. If you notice several bugs and wa
 
 ---
-Generated: 2025-09-12 23:12:40
-Total Knowledge Items: 106
+Generated: 2025-09-13 15:37:30
+Total Knowledge Items: 115
