@@ -113,6 +113,7 @@ solar-emergence/
 
 ## Documentation
 
+🌟 **[Emergence Architecture](docs/EMERGENCE_ARCHITECTURE.md)** - Core discovery framework & implementation  
 📋 **[Complete Local Implementation Guide](docs/LOCAL_IMPLEMENTATION_GUIDE.md)** - $0 deployment  
 🏗️ **[Project Charter](docs/PROJECT_CHARTER.md)** - Vision and principles  
 🔧 **[Technical Specification](docs/TECHNICAL_SPECIFICATION.md)** - Architecture details  
