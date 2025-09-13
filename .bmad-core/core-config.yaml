@@ -18,6 +18,16 @@ devLoadAlwaysFiles:
   - docs/architecture/coding-standards.md
   - docs/architecture/tech-stack.md
   - docs/architecture/source-tree.md
+  - memory/constitution.md
+  - templates/spec-template.md
+  - templates/plan-template.md
+  - templates/tasks-template.md
 devDebugLog: .ai/debug-log.md
 devStoryLocation: docs/stories
 slashPrefix: BMad
+specKit:
+  enabled: true
+  specLocation: specs
+  templatesLocation: templates
+  scriptsLocation: scripts
+  constitutionLocation: memory/constitution.md

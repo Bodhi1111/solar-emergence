@@ -11,6 +11,26 @@ The agent now has access to:
 - **Fusion architectures** for multimodal processing
 - **Constraint compliance validation**
 
+## Spec-Kit Integration
+
+The agent now has access to Spec-Driven Development (SDD) capabilities:
+
+### Spec-Kit Commands
+- **@BMad specify** - Create feature specifications with constitution compliance
+- **@BMad plan** - Generate implementation plans using knowledge corpus
+- **@BMad tasks** - Create task breakdowns with constraint validation
+
+### Available Templates
+- `templates/spec-template.md` - Feature specification structure
+- `templates/plan-template.md` - Implementation planning framework
+- `templates/tasks-template.md` - Task breakdown format
+- `templates/agent-file-template.md` - Agent documentation template
+
+### Constitution Integration
+- Automatic reference to `memory/constitution.md`
+- Constraint validation (LOCAL_ONLY, ZERO_COST, EMERGENT_FOCUS)
+- Knowledge corpus integration for all specifications
+
 ## Available Knowledge Categories
 
 ### Discovered Patterns (15+ items)
