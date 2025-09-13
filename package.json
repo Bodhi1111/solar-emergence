@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Solar Emergence: 4-layer emergent intelligence system with multimodal pattern discovery",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sync-knowledge": "python3 agents/knowledge_harvester.py && python3 agents/bmad_knowledge_bridge.py",
     "bmad-with-knowledge": "npm run sync-knowledge && bmad",
@@ -10,7 +11,10 @@
     "knowledge-stats": "node -e \"const {KnowledgeLoader} = require('./.bmad-core/utils/knowledge-loader.js'); const loader = new KnowledgeLoader(); console.log('Knowledge Stats:', JSON.stringify(loader.getKnowledgeStats(), null, 2));\"",
     "validate-constraints": "node -e \"const {KnowledgeLoader} = require('./.bmad-core/utils/knowledge-loader.js'); const loader = new KnowledgeLoader(); console.log('Testing constraint compliance...'); console.log('OpenAI API:', loader.isConstraintCompliant('OpenAI API')); console.log('Whisper.cpp:', loader.isConstraintCompliant('Whisper.cpp local processing'));\"",
     "search-knowledge": "node -e \"const {KnowledgeLoader} = require('./.bmad-core/utils/knowledge-loader.js'); const term = process.argv[1] || 'local'; const loader = new KnowledgeLoader(); console.log('Search results for \\\"' + term + '\\\":', JSON.stringify(loader.searchKnowledge(term), null, 2));\"",
-    "project-status": "node -e \"const {KnowledgeLoader} = require('./.bmad-core/utils/knowledge-loader.js'); const loader = new KnowledgeLoader(); console.log('Project Status:', JSON.stringify(loader.getProjectStatus(), null, 2));\""
+    "project-status": "node -e \"const {KnowledgeLoader} = require('./.bmad-core/utils/knowledge-loader.js'); const loader = new KnowledgeLoader(); console.log('Project Status:', JSON.stringify(loader.getProjectStatus(), null, 2));\"",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "keywords": [
     "solar-emergence",
@@ -31,6 +35,11 @@
     "zeroCost": true,
     "emergentFocus": true
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vitest": "^2.0.5",
+    "eslint": "^9.9.0",
+    "@types/node": "^20.0.0"
+  },
   "dependencies": {}
 }

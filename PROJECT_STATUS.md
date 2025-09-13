@@ -1,5 +1,7 @@
 # Solar Emergence Project Status
 
+![ci](https://github.com/joshuavaughan/solar-emergence/actions/workflows/ci.yml/badge.svg)
+
 ## Current State (Last Updated: $(date))
 - **Project**: Solar Emergence with BMad framework
 - **Location**: `/Users/joshuavaughan/dev/Projects/solar-emergence`

@@ -1,0 +1,88 @@
+version: 1.0.0
+name: unconstrained-extraction
+description: Extract everything without prejudice or filtering
+
+constraints:
+  filtering: disabled
+  judgment: suspended
+  storage: unlimited
+  discovery_mode: unconstrained
+
+extraction:
+  facial:
+    landmarks: all_468
+    micro_expressions: all_43_AUs
+    tracking: "continuous"
+    confidence_threshold: 0.3  # Low threshold to catch everything
+    unknown_reserve: 30%
+    
+  body:
+    pose_landmarks: all_33
+    tracking: "continuous"
+    confidence_threshold: 0.3
+    posture_metrics: comprehensive
+    
+  hands:
+    landmarks: all_21_per_hand
+    max_hands: 4  # Multiple participants
+    gestures: detect_all
+    tracking: "continuous"
+    
+  audio:
+    transcript: true
+    prosody: complete
+    breathing: detect
+    silence: analyze_patterns
+    energy: track_levels
+    unknown_patterns: capture
+    
+  temporal:
+    sequences: all
+    transitions: capture
+    synchronies: detect
+    periodicity: analyze
+    rhythm: extract
+    
+  cross_modal:
+    correlations: discover
+    alignments: track
+    delays: measure
+    coherence: calculate
+    emergent: allow_discovery
+    
+  holistic:
+    face_pose_sync: calculate
+    gesture_speech_alignment: track
+    multimodal_timing: analyze
+    
+  unknown_space:
+    allocation: 30%
+    expansion: automatic
+    discovery: encouraged
+    exploration_vectors: 100
+    emergence_ready: true
+
+storage:
+  raw_preservation: true
+  no_filtering: true
+  everything_stored: true
+  metadata: comprehensive
+  
+output:
+  format: comprehensive_json
+  include_raw: true
+  include_processed: true
+  include_unknown: true
+  temporal_alignment: true
+
+processing:
+  real_time: preferred
+  batch_size: single_frame
+  memory_management: efficient
+  error_tolerance: high
+  
+discovery:
+  pattern_detection: emergent_only
+  correlation_threshold: 0.0  # No threshold filtering
+  unknown_exploration: active
+  meta_pattern_tracking: enabled
