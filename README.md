@@ -2,6 +2,9 @@
 
 **Emergent Intelligence Discovery System for Estate Planning Sales Intelligence**
 
+[![Architecture](https://img.shields.io/badge/Architecture-EH²SMAS-blue.svg)](./ARCHITECTURE.md)
+[![Research](https://img.shields.io/badge/Research-Novel%20Contribution-green.svg)](./ARCHITECTURE.md)
+[![Status](https://img.shields.io/badge/Status-Foundation%20Phase-yellow.svg)]()
 ![ci](https://github.com/Bodhi1111/solar-emergence/actions/workflows/ci.yml/badge.svg)
 
 ## Core Vision
@@ -17,14 +20,28 @@ SOLAR EMERGENCE represents a groundbreaking application of emergent intelligence
 - **SEQUENTIAL**: Each video builds on previous intelligence
 - **MULTIMODAL**: All signals matter equally until proven otherwise
 
-## Architecture
+## 🧠 Revolutionary Architecture: EH²SMAS
 
-**4-Layer Emergent Intelligence System:**
+SOLAR EMERGENCE implements the world's first **Emergent Holarchical Stigmergic Multi-Agent System (EH²SMAS)** for behavioral intelligence discovery.
 
-1. **High-Fidelity Sensorium**: Unfiltered multimodal capture (468 facial landmarks, 43 AUs, 33 pose points)
-2. **Multidimensional Representation**: Knowledge graphs + latent spaces
-3. **Discovery Engine**: GNNs, TDA, multi-agent discovery system
-4. **Evolution Loop**: Continuous learning with schema evolution
+### Key Innovations
+- **Holarchical Structure**: 511+ specialized agents (468 facial + 43 action units) organized in corporate hierarchy
+- **Stigmergic Intelligence**: Sequential learning across 1,500+ videos with persistent intelligence accumulation  
+- **Emergent Discovery**: System discovers unprogrammed behavioral patterns invisible to humans
+- **Multi-Level Selection**: Intelligence emerges simultaneously at agent, department, division, and executive levels
+
+🔬 **Research Contribution**: First application of holarchical stigmergic principles to multimodal behavioral analysis
+
+📖 **Full Architecture**: See [ARCHITECTURE.md](./ARCHITECTURE.md) for complete EH²SMAS specification
+
+### System Hierarchy
+```
+L5: CEO Agent (Sequential Intelligence Orchestrator)
+├── L4: Executive Agents (Cross-Modal Synthesis)
+│   ├── L3: Division Chiefs (Modal Coordination)
+│   │   ├── L2: Department Managers (Feature Group Synthesis)
+│   │   │   └── L1: Specialist Agents (468 facial + 43 AU + audio agents)
+```
 
 ## Quick Start ($0 Setup)
 

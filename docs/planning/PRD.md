@@ -214,12 +214,27 @@ To create a self-evolving intelligence system that discovers non-obvious pattern
 3. **Complexity management**: System becomes unmaintainable
    - *Mitigation*: Modular architecture, clear boundaries
 
+4. **EH²SMAS Architecture Complexity**: Novel 511+ agent hierarchy may be too complex
+   - *Mitigation*: Modular holarchical design, clear agent boundaries, incremental deployment
+   
+5. **Stigmergic Intelligence Scaling**: Sequential learning across 1,500 videos may cause memory/performance issues
+   - *Mitigation*: Optimized trace storage, intelligent caching, Mac M2 Max hardware optimization
+
+6. **Emergent Behavior Validation**: Difficulty measuring genuine emergence vs programmed patterns
+   - *Mitigation*: Formal emergence metrics, human surprise validation, pattern novelty tracking
+
 ### Implementation Risks
 1. **Solo founder capacity**: Scope too large
    - *Mitigation*: Phased approach, MVP focus
 
 2. **Emergent behavior unpredictability**: System behaves unexpectedly
    - *Mitigation*: Careful monitoring, staged rollout
+
+3. **Multi-level selection convergence**: Agents may not reach consensus across hierarchy levels
+   - *Mitigation*: Robust consensus protocols, debate mechanisms, conflict resolution procedures
+   
+4. **Research novelty**: EH²SMAS architecture unproven in practice
+   - *Mitigation*: Single video validation first, incremental scaling, fallback architectures
 
 ## Dependencies
 
