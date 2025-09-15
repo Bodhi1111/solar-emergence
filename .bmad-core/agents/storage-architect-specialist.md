@@ -1,3 +1,5 @@
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+
 # Storage Architect Specialist Agent
 ## Local Database & Storage Systems Designer for Solar Emergence
 
@@ -25,7 +27,7 @@ Design and implement a **complete local storage architecture** capable of:
 ### Mac M2 Max Optimization
 - **SSD Optimization**: NVMe SSD performance maximization
 - **Memory Management**: Efficient utilization of 64GB unified memory
-- **Query Performance**: Leverage 38-core GPU for parallel query processing
+- **Query Performance**: Leverage 38-core GPU for optimized sequential query processing
 - **Caching Strategies**: Intelligent data caching for hot access patterns
 
 ## Implementation Specifications
@@ -163,8 +165,8 @@ class LocalVectorDatabase:
                 }
             ))
         
-        # Batch upload to appropriate collections
-        self.batch_upload_points(points_to_store)
+        # Sequential upload to appropriate collections
+        self.sequential_upload_points(points_to_store)
         
         return {
             "video_id": video_id,
@@ -338,7 +340,7 @@ class LocalKnowledgeGraph:
     def create_frame_nodes(self, session, video_id, extracted_features):
         """Create frame nodes with aggregated feature information"""
         
-        frame_batch = []
+        frame_sequence = []
         
         for frame_idx in range(len(extracted_features['facial_landmarks'])):
             landmark_data = extracted_features['facial_landmarks'][frame_idx]
@@ -356,16 +358,16 @@ class LocalKnowledgeGraph:
                 "overall_engagement": self.calculate_engagement_score(landmark_data, au_data, audio_data)
             }
             
-            frame_batch.append(frame_summary)
+            frame_sequence.append(frame_summary)
             
-            # Batch insert every 100 frames for performance
-            if len(frame_batch) >= 100:
-                self.batch_insert_frames(session, frame_batch)
-                frame_batch = []
+            # Sequential insert every 100 frames for performance
+            if len(frame_sequence) >= 100:
+                self.sequential_insert_frames(session, frame_sequence)
+                frame_sequence = []
         
         # Insert remaining frames
-        if frame_batch:
-            self.batch_insert_frames(session, frame_batch)
+        if frame_sequence:
+            self.sequential_insert_frames(session, frame_sequence)
     
     def analyze_behavioral_patterns(self, extracted_features):
         """Analyze extracted features to identify behavioral patterns"""
@@ -660,21 +662,20 @@ class OptimizedFileSystemArchitecture:
             "loading_successful": all(data is not None for data in loaded_features.values())
         }
     
-    def batch_feature_access(self, video_ids, feature_types):
-        """Optimized batch loading with prefetching"""
+    def sequential_feature_access(self, video_id, feature_types):
+        """Optimized sequential loading with prefetching"""
         
         # Prefetch commonly accessed features
-        self.caching_system.prefetch_batch(video_ids, feature_types)
+        self.caching_system.prefetch_single(video_id, feature_types)
         
-        batch_results = {}
-        for video_id in video_ids:
-            batch_results[video_id] = self.load_video_features(video_id, feature_types)
+        sequential_results = {}
+        sequential_results[video_id] = self.load_video_features(video_id, feature_types)
         
         return {
-            "batch_size": len(video_ids),
-            "successful_loads": len([r for r in batch_results.values() if r["loading_successful"]]),
-            "total_cache_hits": sum(r["cache_hits"] for r in batch_results.values()),
-            "batch_results": batch_results
+            "video_count": 1,
+            "successful_loads": len([r for r in sequential_results.values() if r["loading_successful"]]),
+            "total_cache_hits": sum(r["cache_hits"] for r in sequential_results.values()),
+            "sequential_results": sequential_results
         }
 ```
 

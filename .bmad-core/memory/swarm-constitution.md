@@ -1,3 +1,6 @@
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+# Swarms for Task Decomposition on Single Video, Not Parallel Video Processing
+
 # Swarm Intelligence Constitution
 ## Foundational Principles for God-View Meta-Swarm Architecture
 
@@ -25,8 +28,13 @@
   - Knowledge compounds across the 1,500 video dataset
 
 #### Swarm Coordination Laws
+- **"Multiple agents analyze SAME video from different perspectives"**
+  - All specialist agents work on ONE video at a time
+  - Each agent extracts different features from the SAME video
+  - Consensus emerges from multi-perspective analysis of single video
+  - Sequential processing: Complete swarm analysis of Video N before Video N+1
 - **"Collective intelligence > sum of parts"**
-  - Emergent properties arise from agent interactions
+  - Emergent properties arise from agent interactions on single video
   - Swarm consensus yields higher truth than individual analysis
   - Cross-agent synthesis creates novel insights impossible alone
 

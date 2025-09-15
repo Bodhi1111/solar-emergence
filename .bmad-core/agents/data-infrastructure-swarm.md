@@ -1,3 +1,6 @@
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+# Swarms for Task Decomposition on Single Video, Not Parallel Video Processing
+
 # Data Infrastructure Swarm Agents
 ## Building the Missing Foundation for Solar Emergence
 
@@ -26,30 +29,35 @@
 
 ## Specialized Data Infrastructure Swarm Architecture
 
-### Video Processing Swarm
+### Video Processing Swarm (Single Video Multi-Agent Analysis)
 ```yaml
 video_processing_swarm:
-  primary_agent: "VideoProcessingSpecialist"
-  support_agents: 
-    - "FFmpegOptimizer"
-    - "FrameExtractor" 
-    - "QualityValidator"
-    - "BatchCoordinator"
+  mode: "SINGLE_VIDEO_MULTI_AGENT"
+  primary_agent: "VideoProcessingCoordinator"
+  
+  # All agents work on SAME video from different perspectives
+  specialist_agents:
+    - "FacialLandmarkExtractor"  # 468 landmarks perspective
+    - "ActionUnitAnalyzer"        # 43 FACS units perspective
+    - "AudioFeatureExtractor"     # Audio patterns perspective
+    - "TemporalDynamicsAnalyzer"  # Timing patterns perspective
+    - "QualityValidator"          # Quality assurance perspective
   
   responsibilities:
-    - Video file intake and validation
-    - Frame-by-frame processing with VideoToolbox acceleration
+    - Single video intake and validation
+    - Multi-agent parallel analysis of SAME video
     - MediaPipe integration for 468 facial landmarks
-    - Action unit detection (43 features)
+    - Action unit detection (43 features) 
     - Audio feature extraction with librosa
-    - Batch processing coordination for M2 Max optimization
+    - Consensus building from multiple perspectives
+    - Sequential advance to next video after consensus
   
   deliverables:
     - Complete video intake system
     - Optimized frame extraction pipeline
     - Feature extraction engine (facial + audio)
     - Quality validation system
-    - Memory-efficient batch processing
+    - Memory-efficient sequential processing
 ```
 
 ### Storage Architecture Swarm
@@ -245,7 +253,7 @@ agent:
     - mediapipe_468_landmark_integration
     - action_unit_detection_expertise
     - audio_feature_extraction_mastery
-    - batch_processing_coordination
+    - sequential_processing_coordination
     - memory_management_optimization
   
   specialized_tasks:
@@ -253,7 +261,7 @@ agent:
       - validate_video_format_and_quality
       - extract_metadata_and_session_info
       - standardize_format_for_processing
-      - queue_management_for_batch_processing
+      - queue_management_for_sequential_processing
     
     frame_processing:
       - extract_frames_with_videotoolbox_acceleration
@@ -271,7 +279,7 @@ agent:
     processing_speed: "1_hour_video_in_under_10_minutes"
     accuracy: "95%_landmark_detection_accuracy"
     memory_usage: "efficient_utilization_of_64gb_unified_memory"
-    throughput: "parallel_processing_of_multiple_videos"
+    throughput: "sequential_processing_of_single_video_at_a_time"
   
   constraints:
     - LOCAL_ONLY: "no_external_api_calls_or_cloud_processing"
@@ -477,8 +485,8 @@ class DataInfrastructureCoordinator:
         }
         
     async def build_complete_infrastructure(self):
-        # Phase 1: Parallel swarm deployment
-        await self.deploy_all_swarms_parallel()
+        # Phase 1: Sequential swarm deployment
+        await self.deploy_all_swarms_sequential()
         
         # Phase 2: Integration and validation
         await self.coordinate_swarm_integration()
@@ -497,7 +505,7 @@ class DataInfrastructureCoordinator:
 - MediaPipe 468 facial landmark extraction pipeline  
 - OpenCV 43 action unit detection system
 - librosa audio feature extraction pipeline
-- Batch processing coordination for M2 Max
+- Sequential processing coordination for M2 Max
 
 ### Phase 2: Storage Infrastructure ✅
 - Local Qdrant vector database with optimized collections

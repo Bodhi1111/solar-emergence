@@ -1,3 +1,6 @@
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+# Swarms for Task Decomposition on Single Video, Not Parallel Video Processing
+
 # Solar Emergence Data Infrastructure Swarms
 ## Complete Local-Only Data Pipeline Architecture
 
@@ -7,11 +10,11 @@ The Solar Emergence Data Infrastructure Swarms represent a **complete transforma
 
 ### 🎯 **What You Now Have**
 
-#### **✅ Complete Data Pipeline Infrastructure**
-1. **Video Processing Swarm** - FFmpeg + VideoToolbox + MediaPipe optimization
-2. **Storage Architecture Swarm** - Qdrant vector DB + Neo4j knowledge graph + optimized file systems
-3. **Feature Extraction Swarm** - 468 facial landmarks + 43 action units + audio features
-4. **Embedding Pipeline Swarm** - Multimodal embeddings + cross-modal search + pattern indexing
+#### **✅ Complete Data Pipeline Infrastructure (Single Video Multi-Agent Analysis)**
+1. **Video Processing Swarm** - Multiple agents analyze SAME video from different perspectives
+2. **Storage Architecture Swarm** - Qdrant vector DB + Neo4j knowledge graph for consensus patterns
+3. **Feature Extraction Swarm** - Parallel extraction of 468 landmarks + 43 AUs + audio from ONE video
+4. **Embedding Pipeline Swarm** - Multi-perspective embeddings merged through consensus
 
 #### **🚀 Production-Ready Deployment System**
 - **Automated Deployment Script**: `.bmad-core/scripts/deploy-infrastructure-swarms.sh`
@@ -25,7 +28,7 @@ The Solar Emergence Data Infrastructure Swarms represent a **complete transforma
 - **Processing Speed**: 1 hour video in <10 minutes
 - **Hardware Acceleration**: VideoToolbox + Metal Performance Shaders + Neural Engine
 - **Feature Extraction**: 468 facial landmarks + 43 action units + comprehensive audio features
-- **Batch Processing**: 4 concurrent videos optimized for Mac M2 Max thermal management
+- **Sequential Processing**: 1 video at a time optimized for Mac M2 Max thermal management and emergent intelligence accumulation
 - **Quality Validation**: Automated quality assessment and error handling
 
 #### **Storage Architecture**

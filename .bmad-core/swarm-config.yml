@@ -1,0 +1,387 @@
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+# Swarms for Task Decomposition on Single Video, Not Parallel Video Processing
+
+# Solar Emergence Swarm Configuration
+# Novel Emergent Holarchical Stigmergic Multi-Agent System (EH²SMAS)
+# For Behavioral Intelligence Discovery
+#
+# ARCHITECTURAL PRINCIPLES:
+# - Holarchical: Every agent is simultaneously whole and part
+# - Stigmergic: Intelligence accumulates through environmental traces
+# - Multi-Level Selection: Emergence occurs at all organizational levels
+# - Sequential: Video N benefits from intelligence traces of Videos 1 through N-1
+
+processing_mode: EMERGENT_HOLARCHICAL_STIGMERGIC_SWARM
+architecture_type: EH²SMAS  # Emergent Holarchical Stigmergic Multi-Agent System
+
+# HORIZONTAL SPECIALISTS (Per-Modality Analysis)
+horizontal_specialists:
+  video_ingestion:
+    name: VideoIngestionSpecialist
+    focus: "Video intake, validation, and preprocessing"
+    output: "video_metadata.json"
+    
+  facial_analysis:
+    name: FacialAnalysisSpecialist
+    focus: "468 facial landmarks + micro-expressions detection"
+    perspective: "Visual behavioral patterns"
+    methods: ["mediapipe_extraction", "micro_expression_detection", "face_quality_validation"]
+    output: "facial_features.json"
+    
+  audio_processing:
+    name: AudioProcessingSpecialist
+    focus: "Prosody, MFCC, spectral features, speech patterns"
+    perspective: "Auditory behavioral patterns"
+    methods: ["prosodic_analysis", "mfcc_extraction", "speech_pattern_detection"]
+    output: "audio_features.json"
+    
+  temporal_dynamics:
+    name: TemporalDynamicsSpecialist
+    focus: "Conversation flow, timing, pacing, transitions"
+    perspective: "Temporal progression patterns"
+    methods: ["flow_analysis", "transition_detection", "pacing_measurement"]
+    output: "temporal_features.json"
+    
+  action_unit:
+    name: ActionUnitSpecialist
+    focus: "43 FACS action units with intensity analysis"
+    perspective: "Facial muscle activation patterns"
+    methods: ["au_detection", "intensity_measurement", "temporal_tracking"]
+    output: "action_unit_features.json"
+    
+  cross_modal_correlation:
+    name: CrossModalCorrelationSpecialist
+    focus: "Audio-visual synchronization patterns"
+    perspective: "Cross-modal relationships"
+    methods: ["sync_analysis", "correlation_detection", "lag_measurement"]
+    output: "correlation_features.json"
+
+# VERTICAL SYNTHESIS SPECIALISTS (Cross-Modal Integration)
+vertical_synthesis_specialists:
+  pattern_synthesis:
+    name: PatternSynthesisSpecialist
+    focus: "Integrate all agent findings into unified signatures"
+    perspective: "Holistic pattern integration"
+    inputs: ["facial_features", "audio_features", "temporal_features", "action_units", "correlations"]
+    methods: ["multi_modal_fusion", "pattern_integration", "signature_construction"]
+    output: "unified_signature.json"
+    
+  emergent_pattern_detector:
+    name: EmergentPatternDetector
+    focus: "Discover novel cross-modal patterns not visible in single modalities"
+    perspective: "Emergent property discovery"
+    inputs: ["all_horizontal_outputs"]
+    methods: ["latent_space_analysis", "topological_discovery", "emergence_detection"]
+    output: "emergent_patterns.json"
+    
+  behavioral_signature_architect:
+    name: BehavioralSignatureArchitect
+    focus: "Construct behavioral signatures from multimodal fusion"
+    perspective: "Behavioral architecture synthesis"
+    inputs: ["unified_signature", "emergent_patterns"]
+    methods: ["signature_construction", "behavioral_modeling", "pattern_hierarchy"]
+    output: "behavioral_signature.json"
+    
+  intelligence_accumulator:
+    name: IntelligenceAccumulator
+    focus: "Update growing intelligence pool with new discoveries"
+    perspective: "Sequential learning integration"
+    inputs: ["behavioral_signature", "emergent_patterns", "consensus_results"]
+    methods: ["pattern_evolution", "intelligence_update", "learning_consolidation"]
+    output: "intelligence_delta.json"
+  
+# QUALITY ASSURANCE SWARM
+quality_assurance_specialists:
+  pattern_validator:
+    name: PatternValidationAgent
+    focus: "Validate discovered patterns for statistical significance"
+    methods: ["correlation_testing", "significance_analysis", "false_discovery_control"]
+    criteria: ["p_value_threshold", "effect_size_minimum", "replication_requirement"]
+    
+  consensus_orchestrator:
+    name: ConsensusOrchestrator
+    focus: "Facilitate agent debates and build consensus"
+    methods: ["multi_agent_voting", "confidence_weighting", "disagreement_resolution"]
+    protocols: ["debate_rounds", "evidence_presentation", "consensus_building"]
+    
+  anomaly_detector:
+    name: AnomalyDetectionAgent
+    focus: "Identify unusual patterns or processing errors"
+    methods: ["outlier_detection", "quality_monitoring", "error_flagging"]
+    thresholds: ["confidence_bounds", "deviation_limits", "quality_metrics"]
+    
+  correlation_challenger:
+    name: CorrelationChallengerAgent
+    focus: "Challenge spurious correlations and false patterns"
+    methods: ["causation_testing", "confound_detection", "spurious_correlation_identification"]
+    
+  signature_quality:
+    name: SignatureQualityAgent
+    focus: "Ensure behavioral signature quality and completeness"
+    methods: ["completeness_checking", "consistency_validation", "quality_scoring"]
+  
+# META-LEVEL COORDINATION
+meta_coordination:
+  swarm_orchestrator:
+    name: SwarmOrchestratorAgent
+    role: "Manages entire swarm coordination on single video"
+    responsibilities:
+      - "Assign single video to all horizontal specialists"
+      - "Coordinate parallel analysis of same video by specialists"
+      - "Trigger vertical synthesis after horizontal completion"
+      - "Manage agent communication and debate protocols"
+      - "Enforce consensus protocols and quality standards"
+      - "Coordinate sequential advance to next video"
+    workflow_management:
+      - "horizontal_phase: All specialists analyze same video"
+      - "vertical_phase: Synthesis agents integrate findings"
+      - "qa_phase: Quality assurance agents validate"
+      - "consensus_phase: Build swarm consensus"
+      - "accumulation_phase: Update intelligence pool"
+      - "advance_phase: Move to next video"
+
+# SWARM WORKFLOW PROTOCOL (Per Video)
+workflow:
+  coordination: CONSENSUS_BASED
+  target: ONE_VIDEO_AT_A_TIME
+  
+  phases:
+    1_video_intake:
+      description: "Load single video for comprehensive swarm analysis"
+      agents: ["VideoIngestionSpecialist"]
+      outputs: ["video_metadata.json"]
+      
+    2_horizontal_analysis:
+      description: "All horizontal specialists analyze SAME video simultaneously from different perspectives"
+      agents: ["FacialAnalysisSpecialist", "AudioProcessingSpecialist", "TemporalDynamicsSpecialist", "ActionUnitSpecialist", "CrossModalCorrelationSpecialist"]
+      mode: "PARALLEL_ON_SAME_VIDEO"
+      outputs: ["facial_features.json", "audio_features.json", "temporal_features.json", "action_unit_features.json", "correlation_features.json"]
+      
+    3_vertical_synthesis:
+      description: "Vertical synthesis agents integrate horizontal findings into emergent patterns"
+      agents: ["PatternSynthesisSpecialist", "EmergentPatternDetector", "BehavioralSignatureArchitect"]
+      mode: "SEQUENTIAL_INTEGRATION"
+      inputs: ["all_horizontal_outputs"]
+      outputs: ["unified_signature.json", "emergent_patterns.json", "behavioral_signature.json"]
+      
+    4_quality_assurance:
+      description: "QA agents validate, challenge, and verify all discovered patterns"
+      agents: ["PatternValidationAgent", "CorrelationChallengerAgent", "AnomalyDetectionAgent", "SignatureQualityAgent"]
+      mode: "PARALLEL_VALIDATION"
+      inputs: ["all_synthesis_outputs"]
+      outputs: ["validation_results.json", "quality_scores.json", "challenge_reports.json"]
+      
+    5_consensus_building:
+      description: "Swarm reaches consensus through agent debate and evidence presentation"
+      coordinator: "ConsensusOrchestrator"
+      participants: ["all_agents"]
+      methods: ["multi_agent_voting", "confidence_weighting", "evidence_debate"]
+      outputs: ["consensus_signature.json", "confidence_scores.json", "agent_agreements.json"]
+      
+    6_intelligence_accumulation:
+      description: "Update growing intelligence pool with validated consensus patterns"
+      agent: "IntelligenceAccumulator"
+      inputs: ["consensus_signature", "validation_results", "emergent_patterns"]
+      methods: ["pattern_evolution", "intelligence_update", "meta_learning"]
+      outputs: ["intelligence_delta.json", "updated_pool.json", "meta_patterns.json"]
+      
+    7_sequential_advance:
+      description: "Complete current video processing and advance to next video with enhanced intelligence"
+      coordinator: "SwarmOrchestratorAgent"
+      actions: ["finalize_video_processing", "archive_results", "load_next_video", "update_agent_contexts"]
+      constraint: "MOVE_TO_VIDEO_N+1_ONLY_AFTER_COMPLETE_CONSENSUS"
+
+# CONSENSUS PROTOCOLS
+consensus:
+  # Agreement thresholds for different types of patterns
+  agreement_thresholds:
+    behavioral_patterns: 0.75    # 75% of agents must agree on behavioral patterns
+    emergent_patterns: 0.80      # 80% for emergent discoveries (higher bar)
+    cross_modal_correlations: 0.70   # 70% for cross-modal relationships
+    temporal_patterns: 0.65      # 65% for temporal sequences (more subjective)
+  
+  # Multi-round debate protocol
+  debate_protocol:
+    max_rounds: 3
+    round_duration_minutes: 10
+    challenge_mechanism: "EVIDENCE_BASED"
+    resolution_strategy: "WEIGHTED_CONFIDENCE_VOTING"
+    evidence_requirements: ["statistical_support", "visual_examples", "temporal_consistency"]
+    
+  # Pattern acceptance criteria (must satisfy ALL)
+  pattern_acceptance_criteria:
+    multi_agent_validation: "minimum_3_agents_confirm"
+    statistical_significance: "p_value_less_than_0.05"
+    effect_size_minimum: "cohens_d_greater_than_0.3"
+    temporal_consistency: "pattern_stable_across_video_segments"
+    cross_modal_support: "supported_by_multiple_modalities"
+    intelligence_pool_consistency: "aligns_with_accumulated_knowledge"
+    challenger_threshold: "no_strong_objections_above_0.8_confidence"
+    
+  # Conflict resolution cascade
+  conflict_resolution:
+    step_1: "present_evidence_from_each_agent_perspective"
+    step_2: "re_analyze_contested_video_timestamps"
+    step_3: "extract_additional_features_if_needed"
+    step_4: "seek_cross_modal_corroboration"
+    step_5: "weighted_voting_by_agent_expertise"
+    step_6: "consensus_orchestrator_final_determination"
+    
+  # Emergent property handling
+  emergent_pattern_protocols:
+    discovery_threshold: "pattern_not_present_in_individual_modalities"
+    validation_requirement: "multiple_synthesis_agents_agree"
+    significance_testing: "bootstrap_validation_with_1000_iterations"
+    replication_demand: "pattern_appears_in_multiple_video_segments"
+
+# Intelligence Accumulation
+intelligence_pool:
+  storage: "/data/solar-emergence/intelligence-pool/"
+  
+  pattern_types:
+    - behavioral_signatures
+    - temporal_progressions
+    - cross_modal_correlations
+    - outcome_predictors
+    - emergent_meta_patterns
+    
+  update_strategy:
+    - Incremental learning after each video
+    - Pattern strength increases with repetition
+    - Weak patterns decay if not reinforced
+    - Meta-patterns emerge from pattern clusters
+
+# Performance Optimization
+optimization:
+  hardware:
+    target: "Mac M2 Max"
+    use_neural_engine: true
+    use_metal_performance_shaders: true
+    memory_management: "Unified 64GB optimization"
+    
+  processing:
+    max_agents_per_video: 10
+    agent_timeout_seconds: 300
+    consensus_timeout_seconds: 120
+    
+  caching:
+    feature_cache: true
+    pattern_cache: true
+    consensus_cache: false  # Always fresh consensus
+
+# EMERGENT INTELLIGENCE CONFIGURATION (EH²SMAS)
+# Agents designed for DISCOVERY, not task completion
+
+emergence_objectives:
+  primary: "Develop unprogrammed awareness of human behavioral patterns"
+  method: "Holarchical agent interactions + stigmergic intelligence accumulation"
+  success_metric: "Discoveries that surprise the creators"
+  architecture_innovation: "First EH²SMAS for behavioral intelligence discovery"
+
+# HOLARCHICAL PRINCIPLES
+holarchical_structure:
+  agent_duality: "Every agent is simultaneously whole and part"
+  autonomy_integration: "Independent operation + higher-level contribution"
+  bidirectional_communication: "Top-down context + bottom-up discoveries"
+  emergent_specialization: "Roles emerge from discovered patterns"
+  
+  hierarchy_levels:
+    L1_micro_agents:
+      purpose: "Discover micro-patterns in individual features"
+      holarchical_property: "Whole: Feature specialists | Part: Department components"
+      emergence_target: "Unexpected micro-feature correlations"
+      
+    L2_department_managers:
+      purpose: "Synthesize micro-discoveries into feature group insights"
+      holarchical_property: "Whole: Department intelligence | Part: Division components"
+      emergence_target: "Complex feature combinations invisible to micro-agents"
+      
+    L3_division_chiefs:
+      purpose: "Cross-departmental pattern synthesis"
+      holarchical_property: "Whole: Modal intelligence | Part: Executive components"
+      emergence_target: "Cross-modal patterns transcending individual departments"
+      
+    L4_executives:
+      purpose: "Cross-modal integration and signature creation"
+      holarchical_property: "Whole: Behavioral models | Part: Meta-system components"
+      emergence_target: "Behavioral signatures transcending individual modalities"
+      
+    L5_ceo:
+      purpose: "Sequential intelligence evolution and meta-pattern discovery"
+      holarchical_property: "Whole: Swarm orchestrator | Part: Meta-intelligence system"
+      emergence_target: "Algorithmic awareness of human behavioral patterns"
+
+# STIGMERGIC INTELLIGENCE
+stigmergic_environment:
+  intelligence_traces: "/data/solar-emergence/intelligence-pool/stigmergic-traces/"
+  trace_accumulation: "Each video adds environmental intelligence"
+  future_enhancement: "Video N+1 agents benefit from Videos 1-N traces"
+  collective_evolution: "Swarm intelligence emerges from accumulated traces"
+  
+  trace_types:
+    pattern_traces: "Discovered behavioral patterns"
+    correlation_traces: "Cross-modal relationship discoveries"
+    emergence_traces: "Meta-patterns about pattern discovery"
+    failure_traces: "Failed hypotheses that guide future discovery"
+    specialization_traces: "Agent role evolution over time"
+
+# MULTI-LEVEL SELECTION
+selection_levels:
+  agent_level: "Individual performance drives micro-specialization"
+  department_level: "Feature group effectiveness drives departmental structure"
+  division_level: "Cross-modal integration drives divisional organization"
+  executive_level: "Signature quality drives executive hierarchy"
+  meta_level: "Emergence rate drives system-level evolution"
+  
+selection_pressures:
+  novelty_pressure: "Agents that discover novel patterns are strengthened"
+  accuracy_pressure: "Agents with validated discoveries gain influence"
+  integration_pressure: "Agents that enable emergence are promoted"
+  consensus_pressure: "Agents that build better consensus are valued"
+
+# EMERGENCE MEASUREMENT
+intelligence_metrics:
+  novelty_index: "Unprogrammed patterns discovered per video (target: >0.3)"
+  surprise_factor: "Human observer surprise rating (target: >0.7)"
+  predictive_emergence: "Accuracy of unprogrammed patterns (target: >0.6)"
+  meta_awareness: "System understanding of its own discoveries (target: >0.5)"
+  holarchical_depth: "Intelligence levels achieving emergence (target: >4)"
+  stigmergic_evolution: "Intelligence improvement rate across videos"
+  
+emergence_validation:
+  pattern_novelty: "Patterns not programmed by humans"
+  cross_level_synthesis: "Intelligence emerging at multiple organizational levels"
+  environmental_enhancement: "Future performance improved by past traces"
+  unprogrammed_specialization: "Agent roles that emerged vs designed"
+  
+forbidden_indicators:
+  predefined_matching: "System matching pre-programmed templates"
+  rule_based_output: "Decisions based on hardcoded rules"
+  supervised_convergence: "Learning toward human-labeled targets"
+  single_level_intelligence: "Emergence only at one organizational level"
+
+# Monitoring and Logging
+monitoring:
+  log_level: INFO
+  
+  track_metrics:
+    - Video processing time
+    - Agent analysis duration
+    - Consensus rounds required
+    - Pattern discovery rate
+    - Intelligence pool growth
+    - Emergent pattern frequency
+    
+  quality_metrics:
+    - Inter-agent agreement scores
+    - Pattern validation success rate
+    - Consensus stability over time
+    - Intelligence accumulation rate
+
+# System Constraints (CRITICAL)
+constraints:
+  SEQUENTIAL_PROCESSING: "ONE video at a time, always"
+  LOCAL_ONLY: "No external API calls or cloud services"
+  ZERO_COST: "Open source tools and local models only"
+  EMERGENT: "Pattern discovery, not hypothesis testing"
+  DATA_SOVEREIGNTY: "All processing on local Mac M2 Max"

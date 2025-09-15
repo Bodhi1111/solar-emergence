@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# SINGULAR SEQUENTIAL PROCESSING ONLY
+
 # Deploy Infrastructure Swarms Script
 # Coordinate deployment of all data infrastructure swarm agents for Solar Emergence
 
@@ -193,7 +195,7 @@ deploy_video_processing_swarm() {
         "neural_engine": true
     },
     "processing_settings": {
-        "max_concurrent_videos": 4,
+        "max_sequential_videos": 1,
         "frame_extraction_strategy": "adaptive",
         "quality_threshold": 0.95,
         "memory_optimization": true
@@ -386,7 +388,7 @@ print('Face mesh initialized successfully')
     "hardware_optimization": {
         "use_metal": true,
         "use_neural_engine": true,
-        "batch_size": 32,
+        "sequence_size": 32,
         "memory_efficient": true
     }
 }
